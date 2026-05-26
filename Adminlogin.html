@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Sikad Driver Login</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:400px;
+}
+
+.card{
+    background:#fff;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.logo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.logo h1{
+    color:#0f9d58;
+}
+
+.logo p{
+    color:#666;
+}
+
+input{
+    width:100%;
+    padding:12px;
+    margin-top:10px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+input:focus{
+    border-color:#0f9d58;
+}
+
+.btn{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:10px;
+    margin-top:15px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:15px;
+}
+
+.login-btn{
+    background:#0f9d58;
+    color:white;
+}
+
+.logout-btn{
+    background:#dc3545;
+    color:white;
+}
+
+.dashboard{
+    display:none;
+    text-align:center;
+}
+
+.avatar{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#0f9d58;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:40px;
+    margin:0 auto 15px;
+}
+
+.status-box{
+    background:#f8f9fa;
+    padding:15px;
+    border-radius:12px;
+    margin:20px 0;
+}
+
+.switch{
+    position:relative;
+    display:inline-block;
+    width:60px;
+    height:34px;
+}
+
+.switch input{
+    opacity:0;
+    width:0;
+    height:0;
+}
+
+.slider{
+    position:absolute;
+    cursor:pointer;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:#ccc;
+    transition:.4s;
+    border-radius:34px;
+}
+
+.slider:before{
+    position:absolute;
+    content:"";
+    height:26px;
+    width:26px;
+    left:4px;
+    bottom:4px;
+    background:white;
+    transition:.4s;
+    border-radius:50%;
+}
+
+input:checked + .slider{
+    background:#0f9d58;
+}
+
+input:checked + .slider:before{
+    transform:translateX(26px);
+}
+
+.status-text{
+    margin-top:10px;
+    font-weight:600;
+    color:#0f9d58;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- LOGIN FORM -->
+    <div class="card" id="loginPage">
+
+        <div class="logo">
+            <h1>E-Sikad Admin</h1>
+            <p>Login to your Admin account</p>
+        </div>
+
+        <input type="text" placeholder="Admin ID"required>
+
+        <input type="password" placeholder="Password"required>
+
+        <button class="btn login-btn" onclick="loginAdmin()"><a href="Admin.html">
+            Login
+        </button>
+
+    </div>
+
+    
+</script>
+
+</body>
+</html>

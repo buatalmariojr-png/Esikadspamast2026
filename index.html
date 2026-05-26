@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Sikad | Online Booking System</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0f9d58,#0d6efd);
+    color:white;
+    padding:20px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin-left:25px;
+    font-weight:500;
+}
+
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 8%;
+    gap:40px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-text h1{
+    font-size:55px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#0f9d58;
+    color:white;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    display:inline-block;
+}
+
+.hero-image{
+    flex:1;
+}
+
+.hero-image img{
+    width:100%;
+}
+
+section{
+    padding:80px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    color:#0f9d58;
+    font-size:38px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.flow{
+    background:white;
+    border-radius:15px;
+    padding:30px;
+    text-align:center;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.feature-box{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+}
+
+footer{
+    background:#1f2937;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+.hero-text h1{
+    font-size:40px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">E-Sikad</div>
+
+<nav>
+    <title>HTML Link</title> 
+    <a href="Driverlogin.html"#" class="btn"">Driver</a>
+</div>
+    <title>HTML Link</title> 
+    <a href="Adminlogin.html"#" class="btn"">Admin</a>
+</div>
+<nav> 
+<nav> 
+<a href="#about">About</a>
+<a href="#modules">Modules</a>
+<a href="#flow">User Flow</a>
+<a href="#features">Features</a>
+</nav>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Smart Transportation for SPAMAST</h1>
+
+<p>
+E-Sikad is an online transportation booking system designed for
+students, faculty, staff, and community members of SPAMAST.
+It provides safer, faster, and more convenient Sikad transportation.
+</p>
+
+<title>HTML Link</title> 
+    <a href="PDashboard.html"#" class="btn"">Book a Ride</a>
+</div>
+
+<div class="hero-image">
+<img src="https://cdn-icons-png.flaticon.com/512/3202/3202926.png">
+</div>
+</section>
+
+<section id="about">
+<div class="section-title">
+<h2>Project Overview</h2>
+</div>
+
+<p style="text-align:center;max-width:900px;margin:auto;">
+The E-Sikad Online Booking System solves transportation challenges
+within the SPAMAST community by providing real-time ride booking,
+driver tracking, fare estimation, and centralized transportation
+management.
+</p>
+</section>
+
+<section id="modules">
+
+<div class="section-title">
+<h2>System Users</h2>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Passenger</h3>
+<p>
+Book rides quickly, view fare estimates, track drivers in real-time,
+receive notifications, and rate completed trips.
+</p>
+</div>
+
+<div class="card">
+<h3>Driver</h3>
+<p>
+Receive booking requests, accept rides instantly,
+navigate passengers, and track daily earnings.
+</p>
+</div>
+
+<div class="card">
+<h3>Administrator</h3>
+<p>
+Monitor trips, manage accounts, generate reports,
+and oversee transportation operations.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="flow">
+
+<div class="section-title">
+<h2>User Flow</h2>
+</div>
+
+<div class="flow">
+<h3>Passenger Flow</h3>
+<p>
+Login → Book Ride → Select Destination → Fare Estimate →
+Driver Matching → Track Ride → Complete Trip → Rate Driver
+</p>
+</div>
+
+<div class="flow">
+<h3>Driver Flow</h3>
+<p>
+Login → Receive Booking → Accept Ride →
+Navigate → Start Trip → Complete Trip → View Earnings
+</p>
+</div>
+
+<div class="flow">
+<h3>Admin Flow</h3>
+<p>
+Login → Dashboard → Monitor Trips →
+Manage Users → Analytics → System Management
+</p>
+</div>
+
+</section>
+
+<section id="features">
+
+<div class="section-title">
+<h2>Core Features</h2>
+</div>
+
+<div class="features">
+
+<div class="feature-box">
+<h4>Ride Booking</h4>
+<p>Fast online booking process.</p>
+</div>
+
+<div class="feature-box">
+<h4>Fare Estimation</h4>
+<p>Know the fare before booking.</p>
+</div>
+
+<div class="feature-box">
+<h4>Real-Time Tracking</h4>
+<p>Track driver location live.</p>
+</div>
+
+<div class="feature-box">
+<h4>Notifications</h4>
+<p>Ride status updates and alerts.</p>
+</div>
+
+<div class="

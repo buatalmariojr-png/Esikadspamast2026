@@ -1,0 +1,211 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-Sikad | Book Ride</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+/* Header */
+.header{
+    background:#0f9d58;
+    color:white;
+    padding:18px;
+    text-align:center;
+    font-size:22px;
+    font-weight:600;
+}
+
+/* Container */
+.container{
+    padding:20px;
+    max-width:500px;
+    margin:auto;
+}
+
+/* Map Placeholder */
+.map{
+    height:220px;
+    background:#d9e8ff;
+    border-radius:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#555;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* Card */
+.card{
+    background:white;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+}
+
+.card h2{
+    margin-bottom:15px;
+    color:#0d6efd;
+}
+
+label{
+    display:block;
+    margin-top:12px;
+    margin-bottom:6px;
+    font-weight:500;
+}
+
+input,
+select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    outline:none;
+}
+
+input:focus,
+select:focus{
+    border-color:#0f9d58;
+}
+
+/* Ride Type */
+.ride-options{
+    display:flex;
+    gap:10px;
+    margin-top:10px;
+}
+
+.option{
+    flex:1;
+    background:#f7f7f7;
+    border:2px solid transparent;
+    text-align:center;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.option.active{
+    border-color:#0f9d58;
+    background:#eaf8f0;
+}
+
+/* Fare */
+.fare-box{
+    background:#e8f5e9;
+    padding:15px;
+    margin-top:18px;
+    border-radius:10px;
+    text-align:center;
+}
+
+.fare-box h3{
+    color:#0f9d58;
+}
+
+/* Button */
+.btn{
+    width:100%;
+    padding:14px;
+    margin-top:20px;
+    border:none;
+    border-radius:10px;
+    background:#0f9d58;
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#0c8548;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+    🚲 Book a Ride
+</div>
+
+<div class="container">
+
+    <div class="map">
+        📍 Map Preview
+    </div>
+
+    <div class="card">
+
+        <h2>Ride Details</h2>
+
+        <label>Pickup Location</label>
+        <select>
+            <option>Select Pickup Point</option>
+            <option>1 Entrance Gate</option>
+            <option>2 Exit Gate</option>
+            <option>3 Auditorium</option>
+            <option>4 Dormitory</option>
+        </select>
+
+        <label>Destination</label>
+        <select>
+            <option>Select Barangay Destination</option>
+            <option>Around Poblacion</option><p>Estimated Minimum Fare</p>
+            <h3>₱15.00</h3>
+            <option>Fishing Village</option>
+            <option>Felis</option>
+        </select>
+
+        <label>Ride Type</label>
+
+        <div class="ride-options">
+            <div class="option active">
+                🚲 Standard
+            </div>
+
+            <div class="option">
+                ⚡ Special
+            </div>
+        </div>
+
+        <label>Special Instructions</label>
+        <input type="text" placeholder="Enter notes for driver">
+
+        <div class="fare-box">
+            <p>Estimated Minimum Fare</p>
+            <h3>₱15.00-30.00</h3>
+        </div>
+        <button class="btn">
+           <title>HTML Link</title> 
+    <a href="SBooked.html"#" class="btn"">Confirm Booking</a>
+</div> 
+ 
+</div>
+
+<script>
+const options = document.querySelectorAll('.option');
+
+options.forEach(option=>{
+    option.addEventListener('click',()=>{
+        options.forEach(o=>o.classList.remove('active'));
+        option.classList.add('active');
+    });
+});
+</script>
+
+</body>
+</html>

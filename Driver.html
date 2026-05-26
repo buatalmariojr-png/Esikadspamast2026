@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Profile | E-Sikad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+}
+
+.header{
+    background:linear-gradient(135deg,#0f9d58,#0d6efd);
+    color:white;
+    text-align:center;
+    padding:40px 20px;
+}
+
+.profile-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:white;
+    color:#0f9d58;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:60px;
+    margin:0 auto 15px;
+}
+
+.header h2{
+    margin-bottom:5px;
+}
+
+.header p{
+    opacity:0.9;
+}
+
+.container{
+    max-width:450px;
+    margin:-25px auto 20px;
+    padding:0 15px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#0f9d58;
+    margin-bottom:15px;
+}
+
+.info-row{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:12px;
+    padding-bottom:10px;
+    border-bottom:1px solid #eee;
+}
+
+.info-row:last-child{
+    border-bottom:none;
+}
+
+.label{
+    color:#666;
+}
+
+.value{
+    font-weight:600;
+}
+
+.rating{
+    color:#ff9800;
+}
+
+.btn{
+    width:100%;
+    border:none;
+    padding:14px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.call-btn{
+    background:#0f9d58;
+    color:white;
+}
+
+.message-btn{
+    background:#0d6efd;
+    color:white;
+}
+
+.sos-btn{
+    background:#dc3545;
+    color:white;
+}
+
+.status{
+    display:inline-block;
+    background:#e8f5e9;
+    color:#0f9d58;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+
+    <div class="profile-img">
+        👨
+    </div>
+
+    <h2>Pedro Santos</h2>
+
+    <p>Sikad Driver</p>
+
+    <br>
+
+    <span class="status">
+        Available
+    </span>
+
+</div>
+
+<div class="container">
+
+    <div class="card">
+        <h3>Driver Information</h3>
+
+        <div class="info-row">
+            <span class="label">Driver ID</span>
+            <span class="value">DRV-1025</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Phone Number</span>
+            <span class="value">0912-345-6789</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Rating</span>
+            <span class="value rating">⭐ 4.9 / 5</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Completed Trips</span>
+            <span class="value">1,245</span>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h3>Vehicle Details</h3>
+
+        <div class="info-row">
+            <span class="label">Sikad Number</span>
+            <span class="value">SKD-102</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Color</span>
+            <span class="value">Green & White</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Plate Number</span>
+            <span class="value">SPM-2026</span>
+        </div>
+
+    </div>
+
+    <div class="card">
+        <h3>Current Trip</h3>
+
+        <div class="info-row">
+            <span class="label">Pickup</span>
+            <span class="value">Main Gate</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">Destination</span>
+            <span class="value">Library Building</span>
+        </div>
+
+        <div class="info-row">
+            <span class="label">ETA</span>
+            <span class="value">3 Minutes</span>
+        </div>
+
+    </div>
+
+    <button class="btn call-btn">
+        📞 Call Driver
+    </button>
+
+    <button class="btn message-btn">
+        💬 Message Driver
+    </button>
+
+    <button class="btn sos-btn">
+        🚨 Emergency SOS
+    </button>
+
+</div>
+
+</body>
+</html>

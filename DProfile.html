@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Driver Matching | E-Sikad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+.container{
+    width:100%;
+    max-width:420px;
+    background:#fff;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header{
+    background:linear-gradient(135deg,#0f9d58,#0d6efd);
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+.header h2{
+    margin-top:10px;
+}
+
+/* Animation */
+.loader{
+    width:80px;
+    height:80px;
+    border:8px solid #e5e7eb;
+    border-top:8px solid #0f9d58;
+    border-radius:50%;
+    margin:20px auto;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+
+/* Content */
+.content{
+    padding:25px;
+    text-align:center;
+}
+
+.content p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+/* Ride Details */
+.details{
+    background:#f8f9fa;
+    border-radius:12px;
+    padding:15px;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.details p{
+    margin:10px 0;
+    color:#333;
+}
+
+/* Driver Card */
+.driver-card{
+    display:none;
+    background:#eaf8f0;
+    border-radius:15px;
+    padding:20px;
+    margin-top:20px;
+}
+
+.driver-img{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:#0f9d58;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:30px;
+    margin:auto;
+}
+
+.driver-card h3{
+    margin-top:15px;
+    color:#0f9d58;
+}
+
+.badge{
+    background:#0f9d58;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    display:inline-block;
+    margin-top:8px;
+    font-size:13px;
+}
+
+/* Buttons */
+.btn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:12px;
+}
+
+.track-btn{
+    background:#0f9d58;
+    color:white;
+}
+
+.cancel-btn{
+    background:#e9ecef;
+    color:#333;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h2>Finding Your Driver</h2>
+    </div>
+
+    <div class="content">
+
+        <div class="loader" id="loader"></div>
+
+        <p id="statusText">
+            Searching for available E-Sikad drivers nearby...
+        </p>
+
+        <div class="details">
+            <p><strong>Pickup:</strong> Exit Gate</p>
+            <p><strong>Destination:</strong> Around Poblacion</p>
+            <p><strong>Estimated Fare:</strong> ₱15.00</p>
+        </div>
+
+        <div class="driver-card" id="driverCard">
+
+            <div class="driver-img">
+                👨
+            </div>
+
+            <h3>Pedro Santos</h3>
+
+            <span class="badge">
+                Driver Matched
+            </span>
+
+            <p style="margin-top:12px;">
+                Sikad No. SKD-102
+            </p>
+
+            <p>
+                ⭐ 4.9 Rating
+            </p>
+
+            <p>
+                ETA: 3 Minutes
+            </p>
+
+            <button class="btn track-btn">
+                <title>HTML Link</title> 
+    <a href="Driver.html"#" class="btn"">Track Driver</a>
+            </button>
+
+        </div>
+
+        <button class="btn cancel-btn">
+            Cancel Booking
+        </button>
+
+    </div>
+
+</div>
+
+<script>
+setTimeout(() => {
+
+    document.getElementById("loader").style.display = "none";
+
+    document.getElementById("statusText").innerHTML =
+    "Great news! A driver has accepted your booking.";
+
+    document.getElementById("driverCard").style.display = "block";
+
+}, 4000);
+</script>
+
+</body>
+</html>

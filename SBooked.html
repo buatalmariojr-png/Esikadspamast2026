@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking Successful | E-Sikad</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:20px;
+}
+
+.success-card{
+    background:#fff;
+    width:100%;
+    max-width:420px;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.checkmark{
+    width:100px;
+    height:100px;
+    background:#e8f5e9;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:50px;
+    color:#0f9d58;
+}
+
+h1{
+    margin-top:20px;
+    color:#0f9d58;
+}
+
+.message{
+    margin:12px 0 25px;
+    color:#666;
+    line-height:1.6;
+}
+
+.booking-info{
+    background:#f8f9fa;
+    padding:18px;
+    border-radius:12px;
+    text-align:left;
+    margin-bottom:20px;
+}
+
+.booking-info p{
+    margin:10px 0;
+    font-size:14px;
+}
+
+.booking-info strong{
+    color:#333;
+}
+
+.status{
+    color:#0f9d58;
+    font-weight:600;
+}
+
+.btn{
+    display:block;
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.track-btn{
+    background:#0f9d58;
+    color:white;
+}
+
+.home-btn{
+    background:#e9ecef;
+    color:#333;
+}
+</style>
+</head>
+<body>
+
+<div class="success-card">
+
+    <div class="checkmark">
+        ✓
+    </div>
+
+    <h1>Booking Successful!</h1>
+
+    <p class="message">
+        Your E-Sikad ride has been booked successfully.
+        Please wait while we connect you with an available driver.
+    </p>
+
+    <div class="booking-info">
+        <p><strong>Booking ID:</strong> ESK-2026-00125</p>
+        <p><option>Pickup:</<option> Exit Gate </p>
+        <p><option>Destination:</option><option>Around Poblacion</option> </p>
+        <p><option>Estimated Fare:</option> ₱15.00</p>
+        <p><option>Status:</option> <span class="status">Finding Driver...</span></p>
+    </div>
+
+    <button class="btn track-btn">
+        <a href="Dprofile.html">Track Ride Status</a>
+    </button>
+  
+  <button class="btn track-btn">
+        <a href="PDashboard.html"> Back to Dashboard </a>
+    </button>
+  
+</div>
+
+</body>
+</html>
